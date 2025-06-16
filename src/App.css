@@ -1,0 +1,15 @@
+.nav-link{
+   color: white;
+}
+
+.nav-link:hover{
+  color: #ffc107;
+}
+
+.navbar navbar-expand-lg{
+  position: sticky;
+}
+
+.black{
+  background-color: black;
+}
