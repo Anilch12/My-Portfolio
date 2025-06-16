@@ -1,9 +1,9 @@
 .nav-link{
-   color: white;
+   color: #ffc107;
 }
 
 .nav-link:hover{
-  color: #ffc107;
+  color: #ffc107 !important;
 }
 
 .navbar navbar-expand-lg{
