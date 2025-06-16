@@ -1,12 +1,19 @@
 import "../../src/App.css";
 import myImage from "../../src/component/assets/myPhoto.png";
+import Icon from "../../src/component/assets/logo_wiith_background.png"
 const Portfolio = () => {
   return (
     <>
       <div className="App text-white black">
         {/* Navbar */}
+
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom fixed-top">
           <div className="container">
+              <img
+                src={Icon}
+                alt="My Project"
+                className="img-fluid rounded w-3 me-2"
+              />
             <a className="navbar-brand" href="#">
               ANIL
             </a>
