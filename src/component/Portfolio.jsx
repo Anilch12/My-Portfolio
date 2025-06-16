@@ -3,7 +3,7 @@ import myImage from "../../src/component/assets/myPhoto.png";
 const Portfolio = () => {
   return (
     <>
-      <div className="App  text-white black">
+      <div className="App text-white black">
         {/* Navbar */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom fixed-top">
           <div className="container">
@@ -54,7 +54,7 @@ const Portfolio = () => {
         </nav>
 
         {/* Hero Section */}
-        <div className="container">
+        <div className="container" style={{ paddingTop: "90px" }}>
           <div className="row align-items-center">
             {/* Left Side */}
             <div className="col-md-6 text-center p-5 mt-5" id="home">
@@ -71,31 +71,31 @@ const Portfolio = () => {
             </div>
 
             {/* Right Side */}
-            <div className="col-md-6 text-center ">
-                <img
-                    src={myImage}
-                    alt="My Project"
-                    className="img-fluid rounded"
-                />
+            <div className="col-md-6 text-center">
+              <img
+                src={myImage}
+                alt="My Project"
+                className="img-fluid rounded"
+              />
             </div>
           </div>
         </div>
 
-        {/* About Section */}
+        {/* Projects Section */}
         <div className="text-center" id="projects">
-            <section  className="container py-5 black">
-             <div className="text-warning fs-1 fw-bold">My Projects</div>
-            <ul class="list-group border-0 black list-unstyled">
-                <li class="black border-0  ">
-                <strong>Aims 360 : </strong> Frontend developer role - developed
+          <section className="container py-5 black">
+            <div className="text-warning fs-1 fw-bold">My Projects</div>
+            <ul className="list-group border-0 black list-unstyled">
+              <li className="black border-0">
+                <strong>Aims 360:</strong> Frontend developer role - developed
                 multiple web pages.
-                </li>
-                <li class="black border-0 ">
-                <strong>Data Scraping: </strong> Responsible for extracting and
+              </li>
+              <li className="black border-0">
+                <strong>Data Scraping:</strong> Responsible for extracting and
                 structuring data from websites.
-                </li>
+              </li>
             </ul>
-            </section>
+          </section>
         </div>
 
         {/* Skills Section */}
