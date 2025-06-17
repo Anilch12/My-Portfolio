@@ -9,6 +9,10 @@
   background-color: #ffc107  !important;
 }
 
+.yellow{
+  color:yellow 
+}
+
 .navbar navbar-expand-lg{
   position: sticky;
 }

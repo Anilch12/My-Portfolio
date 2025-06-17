@@ -156,7 +156,7 @@ const Portfolio = () => {
       {/* Skills Section */}
       <div className="text-center" id="skills">
         <section  className="container py-5">
-          <h2 className="text-warning">My Skills</h2>
+          <h2 className="yellow">My Skills</h2>
           {[
             { name: "HTML5", value: 85 },
             { name: "CSS3", value: 80 },
