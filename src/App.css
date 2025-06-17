@@ -46,12 +46,12 @@
 @keyframes slideFromRight {
   0% {
     opacity: 0;
-    transform: translateX(100px); /* Start from right */
+    transform: translatey(100px); /* Start from right */
     filter: brightness(0.5);
   }
   100% {
     opacity: 1;
-    transform: translateX(0); /* End at original position */
+    transform: translatey(0); /* End at original position */
     filter: brightness(1.5);
   }
 }

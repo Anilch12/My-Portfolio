@@ -40,7 +40,7 @@ const Portfolio = () => {
   }, []);
   const [visible, setVisible] = useState(false)
   return (
-    <div className="App text-white black ">
+    <div className="continer text-white black ">
       {/* Navbar */}
       <CNavbar expand="lg" className="bg-dark  text-white border-bottom fixed-top">
         <CContainer fluid>
