@@ -87,9 +87,9 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="container" style={{ paddingTop: "90px" }}>
+      <div className="container" style={{ paddingTop: "90px" }}  id="home">
         <div className="row align-items-center">
-          <div className="col-md-6 text-center p-5 mt-5 fade-bright" id="home">
+          <div className="col-md-6 text-center p-5 mt-5 fade-bright">
             <h1>
               I'm <span className="text-warning">Anil Chukka</span>
             </h1>
@@ -137,7 +137,7 @@ const Portfolio = () => {
               className="btn btn-outline-light m-2"
               onClick={() => window.open(cv, "_blank")}
             >
-              Download CV
+            Review CV
             </button>
           </div>
           <div className="col-md-6 text-center slide-right-to-left">
@@ -151,8 +151,8 @@ const Portfolio = () => {
       </div>
 
       {/* About Section */}
-      <div className="text-center">
-        <section id="about" className="container py-5 fade-bright">
+      <div className="text-center" id="about">
+        <section  className="container py-5 fade-bright">
           <h2 className="text-warning">About Me</h2>
           <p>
             Front-End Developer with over 2 years of experience designing,
@@ -170,8 +170,8 @@ const Portfolio = () => {
       </div>
 
       {/* Skills Section */}
-      <div className="text-center">
-        <section id="skills" className="container py-5">
+      <div className="text-center" id="skills">
+        <section  className="container py-5">
           <h2 className="text-warning">My Skills</h2>
           {[
             { name: "HTML5", value: 85 },
@@ -197,11 +197,8 @@ const Portfolio = () => {
       </div>
 
       {/* Projects Section */}
-      <div className="text-center">
-        <section
-          id="projects"
-          className="container py-5 text-center fade-bright"
-        >
+      <div className="text-center" id="projects">
+        <section className="container py-5 text-center fade-bright">
           <h2 className="text-warning">My Projects</h2>
           <ul className="list-group border-0 black list-unstyled">
             <li className="black border-0 mb-2">
@@ -227,7 +224,7 @@ const Portfolio = () => {
       </div>
 
       {/* Footer / Contact */}
-      <footer id="contact" className="bg-black text-center py-4 fade-bright">
+      <footer className="bg-black text-center py-4 fade-bright" id="contact">
         <p className="mb-1">Anil Chukka</p>
         <p className="mb-1">
           Ayyappa Society Madhapur, Hyderabad, Telangana – 500018
