@@ -1,6 +1,8 @@
 import "../../src/App.css";
 import myImage from "../../src/component/assets/myPhoto.png";
 import Icon from "../../src/component/assets/logo_wiith_background.png"
+import cv from '../component/assets/dummy.pdf';
+
 const Portfolio = () => {
   return (
     <>
@@ -74,7 +76,7 @@ const Portfolio = () => {
                 scraping
               </p>
               <button className="btn btn-warning m-2">Hire Me</button>
-              <button className="btn btn-outline-light m-2">Download CV</button>
+              <button className="btn btn-outline-light m-2" onClick={() => window.open(cv, '_blank')}>Download CV</button>
             </div>
 
             {/* Right Side */}
