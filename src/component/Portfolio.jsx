@@ -1,6 +1,5 @@
 import "../../src/App.css";
-import myImage from "../../src/component/assets/myPhoto.png";
-import Icon from "../../src/component/assets/logo_wiith_background.png";
+import myImage from "../../src/component/assets/myPhoto.png"
 import cv from "../component/assets/Anil_Chukka.pdf";
 import {
   CCollapse,
