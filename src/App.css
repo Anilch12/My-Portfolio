@@ -52,3 +52,21 @@
     filter: brightness(1.5);
   }
 }
+
+
+.skill-bar {
+  width: 0;
+  opacity: 0;
+  transition: width 2s ease-in-out, opacity 1s ease-in-out;
+}
+
+.skill-item {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 1s ease-in-out;
+}
+
+.skill-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
