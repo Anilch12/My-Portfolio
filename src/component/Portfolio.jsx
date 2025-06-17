@@ -2,7 +2,17 @@ import "../../src/App.css";
 import myImage from "../../src/component/assets/myPhoto.png";
 import Icon from "../../src/component/assets/logo_wiith_background.png";
 import cv from "../component/assets/Anil_Chukka.pdf";
-import { useEffect } from "react";
+import {
+  CCollapse,
+  CContainer,
+  CNavbar,
+  CNavbarBrand,
+  CNavbarNav,
+  CNavbarToggler,
+  CNavItem,
+  CNavLink,
+} from '@coreui/react'
+import { useEffect, useState } from "react";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -29,62 +39,37 @@ const Portfolio = () => {
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
-
+  const [visible, setVisible] = useState(false)
   return (
-    <div className="App text-white black">
+    <div className="App text-white black ">
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom fixed-top">
-        <div className="container">
-          <img
-            src={Icon}
-            alt="My Project"
-            className="img-fluid rounded w-3 me-2"
-          />
-          <a className="navbar-brand" href="#">
-            ANIL
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
+      <CNavbar expand="lg" className="bg-dark  text-white border-bottom fixed-top">
+        <CContainer fluid>
+          <CNavbarBrand className="custom-nav-link" href="#">Anil's</CNavbarBrand>
+          <CNavbarToggler
+            className="custom-nav-link_bg d-fle"
             aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="#home">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#skills">
-                  Skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#projects">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            aria-expanded={visible}
+            onClick={() => setVisible(!visible)}
+          />
+          <CCollapse className="navbar-collapse" visible={visible}>
+            <CNavbarNav>
+              <CNavItem>
+                <CNavLink className="custom-nav-link" href="#" active>Home</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink  className="custom-nav-link" href="#about">About</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink  className="custom-nav-link" href="#skills">Skills</CNavLink>
+              </CNavItem>
+              <CNavItem>
+               <CNavLink  className="custom-nav-link" href="#contact">Contact</CNavLink>
+              </CNavItem>
+            </CNavbarNav>
+          </CCollapse>
+        </CContainer>
+      </CNavbar>
 
       {/* Hero Section */}
       <div className="container" style={{ paddingTop: "90px" }}  id="home">
@@ -137,7 +122,7 @@ const Portfolio = () => {
               className="btn btn-outline-light m-2"
               onClick={() => window.open(cv, "_blank")}
             >
-            Review CV
+              Review CV
             </button>
           </div>
           <div className="col-md-6 text-center slide-right-to-left">
@@ -232,6 +217,8 @@ const Portfolio = () => {
         <p className="mb-1">📧 anilch5199@gmail.com | 📞 6300857548</p>
         <p className="mt-3">© 2025 Anil | All Rights Reserved</p>
       </footer>
+
+      
     </div>
   );
 };

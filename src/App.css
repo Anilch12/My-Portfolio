@@ -1,9 +1,12 @@
-.nav-link{
-   color: #ffc107;
+.custom-nav-link {
+   color: #ffc107 !important;
 }
 
-.nav-link:hover{
-  color: #ffc107 !important;
+.custom-nav-link:hover{
+  color: white !important;
+}
+.custom-nav-link_bg{
+  background-color: #ffc107  !important;
 }
 
 .navbar navbar-expand-lg{
