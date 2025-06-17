@@ -17,3 +17,38 @@
   width: 3%;
   height: auto;
 }
+
+
+@keyframes fadeToBright {
+  0% {
+    opacity: 0;
+    filter: brightness(0);
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1.5);
+    transform: translateY(0);
+  }
+}
+
+.fade-bright {
+  animation: fadeToBright 3s ease-out forwards;
+}
+
+.slide-right-to-left {
+  animation: slideFromRight 3s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); /* Start from right */
+    filter: brightness(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at original position */
+    filter: brightness(1.5);
+  }
+}
