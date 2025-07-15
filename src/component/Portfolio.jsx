@@ -139,16 +139,10 @@ const Portfolio = () => {
         <section  className="container py-5 fade-bright">
           <h2 className="text-warning">About Me</h2>
           <p>
-            Front-End Developer with over 2 years of experience designing,
-            developing, and implementing user interfaces and web applications.
-            Proficient in HTML, CSS, JavaScript, and React.js, with hands-on
-            experience in responsive design frameworks such as Bootstrap.
-          </p>
-          <p>
-            I'm passionate about writing clean, efficient code and staying up to
-            date with the latest front-end technologies. I’ve worked on both
-            personal and professional projects, contributing to user-centric,
-            scalable applications.
+            Passionate and detail-focused Front-End Developer with 2.5+ years of experience in creating responsive and
+            user- friendly web applications. Skilled in React.js, Next.js, JavaScript, SCSS, and Bootstrap. Good at working
+            with APIs and turning UI/UX designs into clean, working websites. Strong in solving problems and working
+            with backend teams to build complete web solutions.
           </p>
         </section>
       </div>
@@ -181,27 +175,33 @@ const Portfolio = () => {
       </div>
 
       {/* Projects Section */}
-      <div className="text-center" id="projects">
-        <section className="container py-5 text-center fade-bright">
-          <h2 className="text-warning">My Projects</h2>
+      <div  id="projects">
+        <section className="container py-5 fade-bright">
+          <h2 className="text-warning text-center">My Projects</h2>
           <ul className="list-group border-0 black list-unstyled">
             <li className="black border-0 mb-2">
-              <strong>Responsive Portfolio Website:</strong> Built using
-              React.js, HTML, CSS, and Bootstrap to showcase my experience,
-              skills, and projects.
+              <strong className="mt-2">1. AIMS360</strong> 
+              <p className="ms-3 mt-2">Duration: 2 Years | Role: Front-End Developer</p>
+              <p className="ms-3">Technologies: React.js, CSS, Bootstrap, REST APIs</p>
+              <p className="ms-3">Built clean and scalable UI modules for HRM, customer records, lead tracking, invoicing, and user profile management.</p>
+              <p className="ms-3">Handled API integration and UI optimization for smooth business workflow management.</p>
+             </li>
+
+            <li className="black border-0 mb-2">
+              <strong>2. E-commerce Application:</strong> 
+              <p className="ms-3 mt-2">Duration: 5 Months | Role: Front-End Developer</p>
+              <p className="ms-3">Technologies: React.js, HTML, CSS, Bootstrap, React Strap, JavaScript, API Integration Designed and developed a responsive webpage.</p>
+              <p className="ms-3">Built reusable UI components for risk tracking, mitigation dashboards, and control monitoring.</p>
+              <p className="ms-3">Implemented domain-based UI restrictions and responsive layouts across all devices.</p>
+
             </li>
             <li className="black border-0 mb-2">
-              <strong>Aims 360:</strong> Developed and maintained
-              customer-facing web pages using React and Bootstrap, collaborating
-              with the UX team.
-            </li>
-            <li className="black border-0 mb-2">
-              <strong>Data Scraping:</strong> Developed scripts to extract and
-              structure web data efficiently, increasing productivity by 30%.
-            </li>
-            <li className="black border-0 mb-2">
-              <strong>E-Commerce Product Page:</strong> React-based product
-              listing with filters, sorting, and API integration.
+              <strong>3. Data Scraping:</strong> 
+              <p className="ms-3 mt-2">Duration: 5 Months | Role: Support Role</p>
+              <p className="ms-3">Technologies: Python, SQL Database, Beautiful Soup, requests, </p>
+              <p className="ms-3">Extracted structured and unstructured data from various websites for analysis and reporting.</p>
+              <p className="ms-3">Handled dynamic content, pagination, and login-based sites with advanced scraping techniques</p>
+              <p className="ms-3">Developed and implemented custom web scraping scripts.</p>
             </li>
           </ul>
         </section>
